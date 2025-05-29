@@ -1,0 +1,130 @@
+.contenedor1paginaP2 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    background-color: white;
+    border-radius: 25px ;
+    box-shadow: 0px 15px 15px rgb(0,0,0);
+    width: 700px;
+    height: 600px;
+}
+
+.TitulopaginaP2 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.contenedor2paginaP2 {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 650px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(255, 61, 61);
+}
+
+.boton1paginaP2 {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    width: 150px;
+    height: 50px;
+    border: rgb(255, 61, 61) 5px solid;
+    background-color: rgba(255, 61, 61, 0.345);
+    color: rgb(120, 28, 28);
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.boton1paginaP2:hover {
+    background-color: rgba(252, 149, 149, 0.726) ;
+    color: rgb(79, 23, 23);
+    border: rgb(242, 41, 41) 5px solid;
+    transform: scale(1.2);
+}
+
+.boton2paginaP2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    border: rgb(255, 61, 61) 5px solid;
+    background-color: rgba(255, 61, 61, 0.345);
+    color: rgb(120, 28, 28);
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.boton2paginaP2:hover {
+    background-color: rgba(252, 149, 149, 0.726) ;
+    color: rgb(79, 23, 23);
+    border: rgb(242, 41, 41) 5px solid;
+    transform: scale(1.2);
+}
+
+.botonInventarioPaginaP2 {
+    position: absolute;
+    top: 42%;
+    left: 37%;
+    width: 150px;
+    height: 50px;
+    border: rgb(255, 61, 61) 5px solid;
+    background-color: rgba(255, 61, 61, 0.345);
+    color: rgb(120, 28, 28);
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.botonInventarioPaginaP2:hover {
+    background-color: rgba(252, 149, 149, 0.726);
+    color: rgb(79, 23, 23);
+    border: rgb(242, 41, 41) 5px solid;
+    transform: scale(1.2);
+}
+
+.boton-ayuda {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgb(255, 61, 61);   
+  background-color: rgb(255, 252, 252);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.boton-ayuda:hover {
+  background-color: rgba(252, 149, 149, 0.72);
+  transform: scale(1.1);
+}
+
+.tooltip-ayuda {
+  position: absolute;
+  top: 18%;
+  right: 5%;
+  width: 260px;
+  padding: 20px 40px;
+  background: white;
+  border: 2px solid rgb(255, 61, 61);
+  border-radius: 12px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: black;
+  z-index: 100;
+}
