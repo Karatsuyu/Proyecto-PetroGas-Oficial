@@ -1,17 +1,17 @@
 .contenedor1compras  {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 13%;
     background-color: white;
     border-radius: 25px ;
     box-shadow: 0px 15px 15px rgb(0,0,0);
-    width: 1600px;
+    width: 1400px;
     height: 800px;
 }
 
 .Titulocompras {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 43px;
@@ -21,16 +21,16 @@
 .contenedor2compras {
   position: absolute;
   top: 2%;
-  left: 22%;
-  width: 900px;
+  left: 2%;
+  width: 1340px;
   height: 70px;
   border-radius: 25px;
   background-color: rgb(255, 61, 61);
 }
 
 .input1compras {
-    width: 140px;
-    height: 40px;
+    width: 160px;
+    height: 45px;
     border-radius: 25px;
     text-align: center;
     border: black 2px solid;
@@ -60,14 +60,14 @@
 
 .label1compras {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 19px;
     color: rgb(0, 0, 0);
 }
 
 .selectcompras {
     position: absolute;
-    top: 37%;
-    left: 8%;
+    top: 36%;
+    left: 9%;
     width: 100px;
     height: 50px;
     border-radius: 25px;
@@ -80,10 +80,10 @@
     background-color: rgb(222, 221, 221);
 }
 
-.tabla1compras {
-    width: 300px;        
+.tabla1compras {   
+    width: 120%;        
     height: 40px;        
-    margin: 20px auto;
+    margin: 40px;
     border-collapse: collapse;
     font-family: 'Arial', sans-serif;
     background-color: white;
@@ -114,7 +114,7 @@
   }
   
   td {
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
   }
 

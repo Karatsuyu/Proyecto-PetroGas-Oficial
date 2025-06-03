@@ -125,9 +125,9 @@ function Compras() {
                 <div className="contenedor2compras">
                     <label className="Titulocompras">compras</label>
                 </div>
-                <label className="label1compras" style={{ position: 'absolute', top: '24%', left: '2%' }}>Cedula</label>
-                <label className="label1compras" style={{ position: 'absolute', top: '39%', left: '2%' }}>Productos</label>
-                <label className="label1compras" style={{ position: 'absolute', top: '47%', left: '2%' }}>Stock</label>
+                <label className="label1compras" style={{ position: 'absolute', top: '20%', left: '2%' }}>Cedula</label>
+                <label className="label1compras" style={{ position: 'absolute', top: '37%', left: '2%' }}>Productos</label>
+                <label className="label1compras" style={{ position: 'absolute', top: '45%', left: '2%' }}>Stock</label>
                 <label className="label1compras" style={{ position: 'absolute', top: '61%', left: '2%' }}>Valor</label>
 
                 <select className="selectcompras" value={productos} onChange={(e) => setProductos(e.target.value)}>
@@ -143,7 +143,7 @@ function Compras() {
                 <button className="boton1compras" onClick={Cliente_existe}>Agregar</button>
                 <button className="boton2compras" onClick={Actualizar_compra}>Actualizar</button>
                 <button className="boton3compras" onClick={Eliminar_compra}>Eliminar</button>
-                <button className="boton4compras" onClick={Limpiar_campos}>Limpiar_campos</button>
+                <button className="boton4compras" onClick={Limpiar_campos}>Limpiar campos</button>
 
                 <div className="contenedor" style={{ position: 'absolute', top: '10%', left: '48%' }}>
                     <table className="tabla1compras">
@@ -174,9 +174,9 @@ function Compras() {
     return (
         <div className="contenedor1compras">
             <form>
-                <input className="input1compras" type="number" value={cedula} placeholder="cedula" onChange={(e) => setCedula(e.target.value)} style={{ position: 'absolute', top: '28%', left: '2%' }} />
-                <input className="input1compras" type="number" value={stock} placeholder="stock" onChange={(e) => setStock(e.target.value)} style={{ position: 'absolute', top: '51%', left: '2%' }} />
-                <input className="input1compras" type="number" value={valor} placeholder="valor" onChange={(e) => setValor(e.target.value)} style={{ position: 'absolute', top: '65%', left: '2%' }} />
+                <input className="input1compras" type="number" value={cedula} placeholder="cedula" onChange={(e) => setCedula(e.target.value)} style={{ position: 'absolute', top: '25%', left: '2%' }} />
+                <input className="input1compras" type="number" value={stock} placeholder="stock" onChange={(e) => setStock(e.target.value)} style={{ position: 'absolute', top: '50%', left: '2%' }} />
+                <input className="input1compras" type="number" value={valor} placeholder="valor" onChange={(e) => setValor(e.target.value)} style={{ position: 'absolute', top: '66%', left: '2%' }} />
             </form>
 
             <Componentes />

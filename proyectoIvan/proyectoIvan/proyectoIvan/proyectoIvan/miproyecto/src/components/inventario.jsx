@@ -125,10 +125,10 @@ function Inventario() {
                 <div className="contenedor2inventario">
                     <label className="Tituloinventario">Inventario</label>
                 </div>
-                <label className="label1inventario" style={{ position: 'absolute', top: '29%', left: '2%' }}>Cedula</label>
-                <label className="label1inventario" style={{ position: 'absolute', top: '45%', left: '2%' }}>Productos</label>
-                <label className="label1inventario" style={{ position: 'absolute', top: '53%', left: '2%' }}>Stock</label>
-                <label className="label1inventario" style={{ position: 'absolute', top: '66%', left: '2%' }}>Valor</label>
+                <label className="label1inventario" style={{ position: 'absolute', top: '18%', left: '2%' }}>Cedula</label>
+                <label className="label1inventario" style={{ position: 'absolute', top: '34%', left: '2%' }}>Productos</label>
+                <label className="label1inventario" style={{ position: 'absolute', top: '43%', left: '2%' }}>Stock</label>
+                <label className="label1inventario" style={{ position: 'absolute', top: '58%', left: '2%' }}>Valor</label>
 
                 <select className="selectinventario" value={productos} onChange={(e) => setProductos(e.target.value)}>
                     <option hidden={true}>productos</option>
@@ -143,9 +143,9 @@ function Inventario() {
                 <button className="boton1inventario" onClick={Empleado_existe}>Agregar</button>
                 <button className="boton2inventario" onClick={Actualizar_inventario}>Actualizar</button>
                 <button className="boton3inventario" onClick={Eliminar_inventario}>Eliminar</button>
-                <button className="boton4inventario" onClick={Limpiar_campos}>Limpiar_campos</button>
+                <button className="boton4inventario" onClick={Limpiar_campos}>Limpiar campos</button>
 
-                <div className="contenedor" style={{ position: 'absolute', top: '10%', left: '48%' }}>
+                <div className="contenedor" style={{ position: 'absolute', top: '10%', left: '45%' }}>
                     <table className="tabla1inventario">
                         <thead>
                             <tr>
@@ -174,9 +174,9 @@ function Inventario() {
     return (
         <div className="contenedor1compras">
             <form>
-                <input className="input1inventario" type="number" value={cedula} placeholder="cedula" onChange={(e) => setCedula(e.target.value)} style={{ position: 'absolute', top: '33%', left: '2%' }} />
-                <input className="input1inventario" type="number" value={stock} placeholder="stock" onChange={(e) => setStock(e.target.value)} style={{ position: 'absolute', top: '57%', left: '2%' }} />
-                <input className="input1inventario" type="number" value={valor} placeholder="valor" onChange={(e) => setValor(e.target.value)} style={{ position: 'absolute', top: '70%', left: '2%' }} />
+                <input className="input1inventario" type="number" value={cedula} placeholder="cedula" onChange={(e) => setCedula(e.target.value)} style={{ position: 'absolute', top: '23%', left: '2%' }} />
+                <input className="input1inventario" type="number" value={stock} placeholder="stock" onChange={(e) => setStock(e.target.value)} style={{ position: 'absolute', top: '48%', left: '2%' }} />
+                <input className="input1inventario" type="number" value={valor} placeholder="valor" onChange={(e) => setValor(e.target.value)} style={{ position: 'absolute', top: '63%', left: '2%' }} />
             </form>
 
             <Componentes />
