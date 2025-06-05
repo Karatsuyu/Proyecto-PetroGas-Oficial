@@ -5,8 +5,8 @@
     background-color: white;
     border-radius: 25px ;
     box-shadow: 0px 15px 15px rgb(0,0,0);
-    width: 700px;
-    height: 600px;
+    width: 780px;
+    height: 650px;
 }
 
 .TitulopaginaP {
@@ -22,8 +22,8 @@
     position: absolute;
     top: 2%;
     left: 3%;
-    width: 650px;
-    height: 50px;
+    width: 730px;
+    height: 55px;
     border-radius: 25px;
     background-color: rgb(255, 61, 61);
 }
@@ -31,9 +31,9 @@
 .boton1paginaP {
     position: absolute;
     top: 30%;
-    left: 23%;
+    left: 20%;
     width: 150px;
-    height: 50px;
+    height: 60px;
     border: rgb(255, 61, 61) 5px solid;
     background-color: rgba(255, 61, 61, 0.345);
     color: rgb(120, 28, 28);
@@ -52,9 +52,9 @@
 .boton2paginaP {
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 60%;
     width: 150px;
-    height: 50px;
+    height: 60px;
     border: rgb(255, 61, 61) 5px solid;
     background-color: rgba(255, 61, 61, 0.345);
     color: rgb(120, 28, 28);
@@ -72,10 +72,10 @@
 
 .botonInventarioPaginaP {
     position: absolute;
-    top: 42%;
-    left: 37%;
+    top: 50%;
+    left: 40%;
     width: 150px;
-    height: 50px;
+    height: 60px;
     border: rgb(255, 61, 61) 5px solid;
     background-color: rgba(255, 61, 61, 0.345);
     color: rgb(120, 28, 28);
@@ -89,6 +89,17 @@
     color: rgb(79, 23, 23);
     border: rgb(242, 41, 41) 5px solid;
     transform: scale(1.2);
+}
+
+.fondo-paginaP {
+    background-image: url('/Gasolinera.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton-ayuda {

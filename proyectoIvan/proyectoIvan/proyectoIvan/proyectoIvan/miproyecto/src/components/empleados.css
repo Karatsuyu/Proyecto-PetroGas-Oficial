@@ -5,8 +5,8 @@
   background-color: white;
   border-radius: 25px;
   box-shadow: 0px 15px 15px rgb(0, 0, 0);
-  width: 1600px;
-  height: 800px;
+  width: 1510px;
+  height: 850px;
 }
 
 .ImagenLupa {
@@ -21,7 +21,7 @@
 .Tituloempleados {
   position: absolute;
   top: 20%;
-  left: 2%;
+  left: 1%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 45px;
   color: white;
@@ -31,7 +31,7 @@
   position: absolute;
   top: 2%;
   left: 23%;
-  width: 900px;
+  width: 1120px;
   height: 70px;
   border-radius: 25px;
   background-color: rgb(255, 61, 61);
@@ -51,7 +51,7 @@
   top: 70%;
   left: 38%;
   width: 150px;
-  height: 50px;
+  height: 60px;
   border: rgb(255, 61, 61) 5px solid;
   background-color: rgba(255, 61, 61, 0.345);
   color: rgb(120, 28, 28);
@@ -77,7 +77,7 @@
 .tabla1empleados {
   position: absolute;
   top: 10%;
-  left: 36%;
+  left: 31%;
   max-width: 300px;
   max-height: 400px;
   margin: 40px auto;
@@ -121,7 +121,7 @@ td {
   top: 70%;
   left: 52%;
   width: 150px;
-  height: 50px;
+  height: 60px;
   border: rgb(255, 61, 61) 5px solid;
   background-color: rgba(255, 61, 61, 0.345);
   color: rgb(120, 28, 28);
@@ -142,7 +142,7 @@ td {
   top: 70%;
   left: 66%;
   width: 150px;
-  height: 50px;
+  height: 60px;
   border: rgb(255, 61, 61) 5px solid;
   background-color: rgba(255, 61, 61, 0.345);
   color: rgb(120, 28, 28);
@@ -160,7 +160,7 @@ td {
 
 .boton4empleados {
   position: absolute;
-  top: 80%;
+  top: 81%;
   left: 52%;
   width: 150px;
   height: 70px;
@@ -180,7 +180,7 @@ td {
 }
 
 .fondo-login {
-    background-image: url('/Gasolinera3.png');
+    background-image: url('/Gasolinera.png');
     background-size: cover;
     background-position: center;
     height: 100vh;

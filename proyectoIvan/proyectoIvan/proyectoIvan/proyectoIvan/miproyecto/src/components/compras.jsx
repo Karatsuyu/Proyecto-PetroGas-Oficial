@@ -145,7 +145,7 @@ function Compras() {
                 <button className="boton3compras" onClick={Eliminar_compra}>Eliminar</button>
                 <button className="boton4compras" onClick={Limpiar_campos}>Limpiar campos</button>
 
-                <div className="contenedor" style={{ position: 'absolute', top: '10%', left: '48%' }}>
+                <div className="contenedor" style={{ position: 'absolute', top: '10%', left: '34%' }}>
                     <table className="tabla1compras">
                         <thead>
                             <tr>

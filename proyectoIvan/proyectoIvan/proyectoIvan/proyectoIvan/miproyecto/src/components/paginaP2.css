@@ -91,6 +91,16 @@
     transform: scale(1.2);
 }
 
+.fondo-paginaP2 {
+    background-image: url('/Gasolinera.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .boton-ayuda {
   position: absolute;

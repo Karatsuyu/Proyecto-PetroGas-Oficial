@@ -136,12 +136,12 @@ function Empleados() {
           <label className="Tituloempleados">Registro Empleados</label>
         </div>
         <div>
-          <label className="label1empleados" style={{ position: "absolute", top: "15%", left: "2%" }}>Nombre</label>
-          <label className="label1empleados" style={{ position: "absolute", top: "30%", left: "2%" }}>Edad</label>
-          <label className="label1empleados" style={{ position: "absolute", top: "45%", left: "2%" }}>Correo</label>
-          <label className="label1empleados" style={{ position: "absolute", top: "60%", left: "2%" }}>Teléfono</label>
-          <label className="label1empleados" style={{ position: "absolute", top: "75%", left: "2%" }}>Cédula</label>
-          <label className="label1empleados" style={{ position: "absolute", top: "90%", left: "2%" }}>Contraseña</label>
+          <label className="label1empleados" style={{ position: "absolute", top: "13%", left: "2%" }}>Nombre</label>
+          <label className="label1empleados" style={{ position: "absolute", top: "26%", left: "2%" }}>Edad</label>
+          <label className="label1empleados" style={{ position: "absolute", top: "39%", left: "2%" }}>Correo</label>
+          <label className="label1empleados" style={{ position: "absolute", top: "52%", left: "2%" }}>Teléfono</label>
+          <label className="label1empleados" style={{ position: "absolute", top: "65%", left: "2%" }}>Cédula</label>
+          <label className="label1empleados" style={{ position: "absolute", top: "80%", left: "2%" }}>Contraseña</label>
 
           <button className="boton1empleados" onClick={Agregar_empleado}>Agregar</button>
           <button className="boton2empleados" onClick={Actualizar_empleado}>Actualizar</button>
@@ -154,7 +154,7 @@ function Empleados() {
             onClick={Buscar}
             style={{
               position: "absolute",
-              top: "80%",
+              top: "69%",
               left: "14%",
               width: "40px",
               height: "40px",
@@ -216,7 +216,7 @@ function Empleados() {
           value={nombre}
           placeholder="nombre"
           onChange={(e) => setNombre(e.target.value)}
-          style={{ position: "absolute", top: "19%", left: "2%" }}
+          style={{ position: "absolute", top: "17%", left: "2%" }}
         />
         <input
           className="input1empleados"
@@ -224,14 +224,14 @@ function Empleados() {
           value={edad}
           placeholder="edad"
           onChange={(e) => setEdad(e.target.value)}
-          style={{ position: "absolute", top: "34%", left: "2%" }}
+          style={{ position: "absolute", top: "30%", left: "2%" }}
         />
         <input
           className="input1empleados"
           value={correo}
           placeholder="correo"
           onChange={(e) => setCorreo(e.target.value)}
-          style={{ position: "absolute", top: "49%", left: "2%" }}
+          style={{ position: "absolute", top: "43%", left: "2%" }}
         />
         <input
           className="input1empleados"
@@ -239,7 +239,7 @@ function Empleados() {
           value={telefono}
           placeholder="teléfono"
           onChange={(e) => setTelefono(e.target.value)}
-          style={{ position: "absolute", top: "64%", left: "2%" }}
+          style={{ position: "absolute", top: "56%", left: "2%" }}
         />
         <input
           className="input1empleados"
@@ -247,7 +247,7 @@ function Empleados() {
           value={cedula}
           placeholder="cédula"
           onChange={(e) => setCedula(e.target.value)}
-          style={{ position: "absolute", top: "79%", left: "2%" }}
+          style={{ position: "absolute", top: "69%", left: "2%" }}
         />
         <input
           className="input1empleados"
@@ -255,7 +255,7 @@ function Empleados() {
           value={password}
           placeholder="contraseña"
           onChange={(e) => setPassword(e.target.value)}
-          style={{ position: "absolute", top: "94%", left: "2%" }}
+          style={{ position: "absolute", top: "84%", left: "2%" }}
         />
       </form>
       <Componentes />

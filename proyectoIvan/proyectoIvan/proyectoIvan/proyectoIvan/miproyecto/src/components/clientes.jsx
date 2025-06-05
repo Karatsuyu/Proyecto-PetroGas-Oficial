@@ -198,68 +198,68 @@ function Clientes() {
   }
 
   return (
-    <div className="contenedor1clientes">
-      <form>
-        <input
-          className="input1clientes"
-          value={nombre || ""}
-          placeholder="nombre"
-          onChange={(e) => setNombre(e.target.value)}
-          style={{ position: "absolute", top: "19%", left: "2%" }}
-        />
-        <input
-          className="input1clientes"
-          type="number"
-          value={edad || ""}
-          placeholder="edad"
-          onChange={(e) => setEdad(e.target.value)}
-          style={{ position: "absolute", top: "34%", left: "2%" }}
-        />
-        <input
-          className="input1clientes"
-          value={correo || ""}
-          placeholder="correo"
-          onChange={(e) => setCorreo(e.target.value)}
-          style={{ position: "absolute", top: "49%", left: "2%" }}
-        />
-        <input
-          className="input1clientes"
-          type="number"
-          value={telefono || ""}
-          placeholder="teléfono"
-          onChange={(e) => setTelefono(e.target.value)}
-          style={{ position: "absolute", top: "64%", left: "2%" }}
-        />
-        <input
-          className="input1clientes"
-          type="number"
-          value={cedula || ""}
-          placeholder="cédula"
-          onChange={(e) => setCedula(e.target.value)}
-          style={{ position: "absolute", top: "79%", left: "2%" }}
-        />
-      </form>
-      <Componentes />
-            <button
-                className="boton-ayuda"
-                onClick={() => setShowHelp((prev) => !prev)}
-                title="Ayuda"
-            >
-                ?
-            </button>
+    <div className="fondo-clientes">
+      <div className="contenedor1clientes">
+          <input
+            className="input1clientes"
+            value={nombre || ""}
+            placeholder="nombre"
+            onChange={(e) => setNombre(e.target.value)}
+            style={{ position: "absolute", top: "19%", left: "2%" }}
+          />
+          <input
+            className="input1clientes"
+            type="number"
+            value={edad || ""}
+            placeholder="edad"
+            onChange={(e) => setEdad(e.target.value)}
+            style={{ position: "absolute", top: "34%", left: "2%" }}
+          />
+          <input
+            className="input1clientes"
+            value={correo || ""}
+            placeholder="correo"
+            onChange={(e) => setCorreo(e.target.value)}
+            style={{ position: "absolute", top: "49%", left: "2%" }}
+          />
+          <input
+            className="input1clientes"
+            type="number"
+            value={telefono || ""}
+            placeholder="teléfono"
+            onChange={(e) => setTelefono(e.target.value)}
+            style={{ position: "absolute", top: "64%", left: "2%" }}
+          />
+          <input
+            className="input1clientes"
+            type="number"
+            value={cedula || ""}
+            placeholder="cédula"
+            onChange={(e) => setCedula(e.target.value)}
+            style={{ position: "absolute", top: "79%", left: "2%" }}
+          />
+        <Componentes />
+              <button
+                  className="boton-ayuda"
+                  onClick={() => setShowHelp((prev) => !prev)}
+                  title="Ayuda"
+              >
+                  ?
+              </button>
 
-            {showHelp && (
-                <div className="tooltip-ayuda">
-                    <p style={{ margin: 0, fontWeight: "bold" }}>¿Necesitas ayuda?</p>
-                    <p style={{ margin: 0 }}>
-                        Si tienes inconvenientes para registrar compras, escribe a<br />
-                        <strong>soporte@petrogas.com</strong> o llama al&nbsp;
-                        <strong>(+57) 300 123 4567</strong>.
-                    </p>
-                </div>
-            )}
-        </div>
-    );
+              {showHelp && (
+                  <div className="tooltip-ayuda">
+                      <p style={{ margin: 0, fontWeight: "bold" }}>¿Necesitas ayuda?</p>
+                      <p style={{ margin: 0 }}>
+                          Si tienes inconvenientes para registrar compras, escribe a<br />
+                          <strong>soporte@petrogas.com</strong> o llama al&nbsp;
+                          <strong>(+57) 300 123 4567</strong>.
+                      </p>
+                  </div>
+              )}
+            </div>
+          </div>
+  );
 }
 
-export default Clientes;
+  export default Clientes;

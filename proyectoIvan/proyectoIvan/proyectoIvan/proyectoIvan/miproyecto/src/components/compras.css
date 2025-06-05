@@ -1,11 +1,11 @@
 .contenedor1compras  {
     position: absolute;
-    top: 10%;
+    top: 9%;
     left: 13%;
     background-color: white;
-    border-radius: 25px ;
+    border-radius: 28px ;
     box-shadow: 0px 15px 15px rgb(0,0,0);
-    width: 1400px;
+    width: 1350px;
     height: 800px;
 }
 
@@ -22,14 +22,14 @@
   position: absolute;
   top: 2%;
   left: 2%;
-  width: 1340px;
+  width: 1280px;
   height: 70px;
   border-radius: 25px;
   background-color: rgb(255, 61, 61);
 }
 
 .input1compras {
-    width: 160px;
+    width: 180px;
     height: 45px;
     border-radius: 25px;
     text-align: center;
@@ -42,7 +42,7 @@
     top: 75%;
     left: 40%;
     width: 150px;
-    height: 55px;
+    height: 60px;
     border: rgb(255, 61, 61) 5px solid;
     background-color: rgba(255, 61, 61, 0.345);
     color: rgb(120, 28, 28);
@@ -68,7 +68,7 @@
     position: absolute;
     top: 36%;
     left: 9%;
-    width: 100px;
+    width: 120px;
     height: 50px;
     border-radius: 25px;
     text-align: center;
@@ -125,7 +125,7 @@
   top: 75%;
   left: 53%;
   width: 150px;
-  height: 55px;
+  height: 60px;
   border: rgb(255, 61, 61) 5px solid;
   background-color: rgba(255, 61, 61, 0.345);
   color: rgb(120, 28, 28);
@@ -146,7 +146,7 @@
   top: 75%;
   left: 66%;
   width: 150px;
-  height: 55px;
+  height: 60px;
   border: rgb(255, 61, 61) 5px solid;
   background-color: rgba(255, 61, 61, 0.345);
   color: rgb(120, 28, 28);
@@ -166,8 +166,8 @@
   position: absolute;
   top: 85%;
   left: 52%;
-  width: 200px;
-  height: 70px;
+  width: 180px;
+  height: 60px;
   border: rgb(255, 61, 61) 5px solid;
   background-color: rgba(255, 61, 61, 0.345);
   color: rgb(120, 28, 28);
