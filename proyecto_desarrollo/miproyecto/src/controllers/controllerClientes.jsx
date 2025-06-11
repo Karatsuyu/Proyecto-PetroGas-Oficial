@@ -6,15 +6,11 @@ export function Buscar({ cedula, setNombre, setEdad, setCorreo, setTelefono }) {
       .get(`http://localhost:8000/api/Clientes/?cedula=${cedula}`)
       .then((Response) => {
         const Empleado = Response.data[0];
-        if (Empleado) {
           setNombre(Empleado.nombre);
           setEdad(Empleado.edad);
           setCorreo(Empleado.correo);
           setTelefono(Empleado.telefono);
           alert("Cliente encontrado");
-        } else {
-          alert("Cliente no encontrado");
-        }
       })
       .catch((Error) => {
         console.log(Error);
@@ -128,13 +124,9 @@ export function llenarTabla({ setUsuarios }) {
   axios
     .get(`http://localhost:8000/api/Clientes/`)
     .then((Response) => {
-      console.log("Respuesta de Clientes:", Response.data);
-      const data = Array.isArray(Response.data)
-        ? Response.data
-        : Response.data.data || [];
-      setUsuarios(data);
+      setUsuarios(Response.data);
     })
     .catch((Error) => {
-      console.log("Error", Error);
+      console.log("Error al obtener clientes:", Error);
     });
 }

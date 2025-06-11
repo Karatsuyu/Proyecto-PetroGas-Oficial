@@ -6,7 +6,7 @@ import {
   ActualizarEmpleado,
   EliminarEmpleado,
   LimpiarCampos,
-  LlenarTabla,
+  llenarTabla,
 } from "../controllers/controllerEmpleados";
 
 function Empleados() {
@@ -17,85 +17,86 @@ function Empleados() {
   const [cedula, setCedula] = useState("");
   const [password, setPassword] = useState("");
   const [usuarios, setUsuarios] = useState([]);
+  const [showHelp, setShowHelp] = useState(false);
 
   useEffect(() => {
-    LlenarTabla({ setUsuarios });
+    llenarTabla({ setUsuarios });
   }, []);
 
   return (
-    <div className="contenedor2empleados">
-      <label className="Tituloempleados">Registro Empleados</label>
+    <div className="contenedor1empleados">
+      <form>
+        <input
+          className="input1empleados"
+          value={nombre}
+          placeholder="Nombre"
+          onChange={(e) => setNombre(e.target.value)}
+          style={{ position: "absolute", top: "19%", left: "2%" }}
+        />
+        <input
+          className="input1empleados"
+          type="number"
+          value={edad}
+          placeholder="Edad"
+          onChange={(e) => setEdad(e.target.value)}
+          style={{ position: "absolute", top: "31%", left: "2%" }}
+        />
+        <input
+          className="input1empleados"
+          type="email"
+          value={correo}
+          placeholder="Correo"
+          onChange={(e) => setCorreo(e.target.value)}
+          style={{ position: "absolute", top: "43%", left: "2%" }}
+        />
+        <input
+          className="input1empleados"
+          type="number"
+          value={telefono}
+          placeholder="Teléfono"
+          onChange={(e) => setTelefono(e.target.value)}
+          style={{ position: "absolute", top: "55%", left: "2%" }}
+        />
+        <input
+          className="input1empleados"
+          type="number"
+          value={cedula}
+          placeholder="Cédula"
+          onChange={(e) => setCedula(e.target.value)}
+          style={{ position: "absolute", top: "67%", left: "2%" }}
+        />
+        <input
+          className="input1empleados"
+          type="password"
+          value={password}
+          placeholder="Contraseña"
+          onChange={(e) => setPassword(e.target.value)}
+          style={{ position: "absolute", top: "79%", left: "2%" }}
+        />
+      </form>
 
-      <label className="label1empleados" style={{ position: "absolute", top: "13%", left: "2%" }}>
+      <div className="contenedor2empleados">
+        <label className="Tituloempleados">Registro Empleados</label>
+      </div>
+
+      <label className="label1empleados" style={{ position: "absolute", top: "15%", left: "2%" }}>
         Nombre
       </label>
-      <input
-        className="inputempleados"
-        value={nombre}
-        onChange={(e) => setNombre(e.target.value)}
-        placeholder="Nombre"
-        style={{ position: "absolute", top: "18%", left: "2%" }}
-      />
-
-      <label className="label1empleados" style={{ position: "absolute", top: "26%", left: "2%" }}>
+      <label className="label1empleados" style={{ position: "absolute", top: "27%", left: "2%" }}>
         Edad
       </label>
-      <input
-        className="inputempleados"
-        type="number"
-        value={edad}
-        onChange={(e) => setEdad(e.target.value)}
-        placeholder="Edad"
-        style={{ position: "absolute", top: "31%", left: "2%" }}
-      />
-
       <label className="label1empleados" style={{ position: "absolute", top: "39%", left: "2%" }}>
         Correo
       </label>
-      <input
-        className="inputempleados"
-        type="email"
-        value={correo}
-        onChange={(e) => setCorreo(e.target.value)}
-        placeholder="Correo"
-        style={{ position: "absolute", top: "44%", left: "2%" }}
-      />
-
-      <label className="label1empleados" style={{ position: "absolute", top: "52%", left: "2%" }}>
+      <label className="label1empleados" style={{ position: "absolute", top: "51%", left: "2%" }}>
         Teléfono
       </label>
-      <input
-        className="inputempleados"
-        type="number"
-        value={telefono}
-        onChange={(e) => setTelefono(e.target.value)}
-        placeholder="Teléfono"
-        style={{ position: "absolute", top: "57%", left: "2%" }}
-      />
-
-      <label className="label1empleados" style={{ position: "absolute", top: "65%", left: "2%" }}>
+      <label className="label1empleados" style={{ position: "absolute", top: "63%", left: "2%" }}>
         Cédula
       </label>
-      <input
-        className="inputempleados"
-        type="number"
-        value={cedula}
-        onChange={(e) => setCedula(e.target.value)}
-        placeholder="Cédula"
-        style={{ position: "absolute", top: "70%", left: "2%" }}
-      />
-
-      <label className="label1empleados" style={{ position: "absolute", top: "80%", left: "2%" }}>
+      <label className="label1empleados" style={{ position: "absolute", top: "75%", left: "2%" }}>
         Contraseña
       </label>
-      <input
-        className="inputempleados"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Contraseña"
-        style={{ position: "absolute", top: "85%", left: "2%" }}
-      />
 
       <button
         className="boton1empleados"
@@ -108,7 +109,7 @@ function Empleados() {
             cedula,
             password,
             setUsuarios,
-            llenarTabla: () => LlenarTabla({ setUsuarios }),
+            llenarTabla: () => llenarTabla({ setUsuarios }),
             LimpiarCampos: () =>
               LimpiarCampos({ setNombre, setEdad, setCorreo, setTelefono, setCedula, setPassword }),
           })
@@ -121,13 +122,13 @@ function Empleados() {
         className="boton2empleados"
         onClick={() =>
           ActualizarEmpleado({
-            cedula,
             nombre,
-            correo,
             edad,
+            correo,
             telefono,
+            cedula,
             password,
-            llenarTabla: () => LlenarTabla({ setUsuarios }),
+            llenarTabla: () => llenarTabla({ setUsuarios }),
             LimpiarCampos: () =>
               LimpiarCampos({ setNombre, setEdad, setCorreo, setTelefono, setCedula, setPassword }),
           })
@@ -141,7 +142,7 @@ function Empleados() {
         onClick={() =>
           EliminarEmpleado({
             cedula,
-            llenarTabla: () => LlenarTabla({ setUsuarios }),
+            llenarTabla: () => llenarTabla({ setUsuarios }),
             LimpiarCampos: () =>
               LimpiarCampos({ setNombre, setEdad, setCorreo, setTelefono, setCedula, setPassword }),
           })
@@ -159,27 +160,24 @@ function Empleados() {
         Limpiar campos
       </button>
 
-      <button
-        className="botonBuscarempleados"
-        onClick={() =>
-          Buscar({
-            cedula,
-            setNombre,
-            setEdad,
-            setCorreo,
-            setTelefono,
-            setPassword,
-          })
-        }
-      >
-        Buscar
-      </button>
+      <img
+          src="./lupa.png"
+          className="ImagenLupa"
+          onClick={Buscar}
+          style={{
+            position: "absolute",
+            top: "67%",
+            left: "14%",
+            width: "40px",
+            height: "40px",
+          }}
+      />
 
       <div
-        className="tablaempleados-container"
-        style={{ position: "absolute", top: "50%", left: "30%", width: "60%" }}
+        className="contenedor"
+        style={{ position: "absolute", top: "13%", left: "37%" }}
       >
-        <table className="tablaempleados">
+        <table className="tabla1empleados">
           <thead>
             <tr>
               <th>Nombre</th>
@@ -191,8 +189,8 @@ function Empleados() {
             </tr>
           </thead>
           <tbody>
-            {usuarios.map((usuario) => (
-              <tr key={usuario.cedula}>
+            {usuarios.map((usuario, index) => (
+              <tr key={index}>
                 <td>{usuario.nombre}</td>
                 <td>{usuario.edad}</td>
                 <td>{usuario.correo}</td>
@@ -204,6 +202,26 @@ function Empleados() {
           </tbody>
         </table>
       </div>
+
+      <button
+        className="boton-ayuda"
+        onClick={() => setShowHelp((prev) => !prev)}
+        title="Ayuda"
+      >
+        ?
+      </button>
+
+      {showHelp && (
+        <div className="tooltip-ayuda">
+          <p style={{ margin: 0, fontWeight: "bold" }}>¿Necesitas ayuda?</p>
+          <p style={{ margin: 0 }}>
+            Si tienes inconvenientes para registrar empleados, escribe a
+            <br />
+            <strong>soporte@petrogas.com</strong> o llama al&nbsp;
+            <strong>(+57) 300 123 4567</strong>.
+          </p>
+        </div>
+      )}
     </div>
   );
 }

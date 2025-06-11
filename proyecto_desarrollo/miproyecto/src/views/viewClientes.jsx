@@ -32,6 +32,9 @@ function Clientes() {
   return (
     <div className="fondo-clientes">
       <div className="contenedor1clientes">
+        <div className="contenedor2clientes">
+          <div className="TituloClientes">Registro Clientes</div>
+        </div>
         <input
           className="input1clientes"
           value={nombre}
@@ -70,6 +73,12 @@ function Clientes() {
           placeholder="Cédula"
           style={{ position: "absolute", top: "79%", left: "2%" }}
         />
+
+        <label className="label1clientes" style={{ position: "absolute", top: "15%", left: "3%" }}>Nombre</label>
+        <label className="label1clientes" style={{ position: "absolute", top: "30%", left: "3%" }}>Edad</label>
+        <label className="label1clientes" style={{ position: "absolute", top: "45%", left: "3%" }}>Correo</label>
+        <label className="label1clientes" style={{ position: "absolute", top: "60%", left: "3%" }}>Teléfono</label>
+        <label className="label1clientes" style={{ position: "absolute", top: "75%", left: "3%" }}>Cédula</label>
 
         <button
           className="boton1clientes"
@@ -163,7 +172,7 @@ function Clientes() {
 
         <div
           className="tabla1clientes-container"
-          style={{ position: "absolute", top: "110%", left: "2%", width: "90%" }}
+          style={{ position: "absolute", top: "11%", left: "33%", width: "47%" }}
         >
           <table className="tabla1clientes">
             <thead>

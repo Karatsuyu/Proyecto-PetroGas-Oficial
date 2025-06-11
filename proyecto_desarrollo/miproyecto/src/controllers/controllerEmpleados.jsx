@@ -7,7 +7,9 @@ export function Buscar({
   setCorreo,
   setTelefono,
   setPassword,
-}) {
+}) 
+
+{
   if (cedula) {
     axios
       .get(`http://localhost:8000/api/Empleados/?cedula=${cedula}`)
@@ -132,16 +134,14 @@ export function LimpiarCampos({
   setPassword("");
 }
 
-export function LlenarTabla({ setUsuarios }) {
+export function llenarTabla({ setEmpleados }) {
   axios
     .get(`http://localhost:8000/api/Empleados/`)
-    .then((Response) => {
-      const data = Array.isArray(Response.data)
-        ? Response.data
-        : Response.data.data || [];
-      setUsuarios(data);
+    .then((res) => {
+      setEmpleados(res.data);
     })
-    .catch((Error) => {
-      console.log("Error", Error);
+    .catch((err) => {
+      console.log("Error al obtener empleados:", err);
     });
+
 }

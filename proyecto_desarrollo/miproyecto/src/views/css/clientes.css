@@ -20,21 +20,21 @@
 
 .TituloClientes {
   position: absolute;
-  top: 22%;
+  top: 7%;
   left: 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 45px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .contenedor2clientes {
   position: absolute;
   top: 2%;
-  left: 3%;
+  left: 2%;
   width: 1420px;
   height: 70px;
   border-radius: 25px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 61, 61);
 }
 
 .input1clientes {
@@ -84,11 +84,10 @@
   color: rgb(0, 0, 0);
 }
 
-.tabla1clientes {
+.tabla1clientes-container {
   position: absolute;
   top: 10%;
   left: 33%;
-  max-width: 705px;
   margin: 45px auto;
   border-collapse: collapse;
   font-family: "Arial", sans-serif;
@@ -98,7 +97,7 @@
   height: 300px;         
   overflow-y: auto;      
   display: block;        
-  width: 100%;
+  width: 705px;
   height: 390px;
   overflow-y: scroll;
   display: block;          
