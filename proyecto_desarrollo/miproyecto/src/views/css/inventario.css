@@ -1,0 +1,223 @@
+.contenedor1inventario  {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: white;
+    border-radius: 25px ;
+    box-shadow: 0px 15px 15px rgb(0,0,0);
+    width: 1590px;
+    height: 800px;
+}
+
+.Tituloinventario {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    color: white;
+}
+
+.contenedor2inventario {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 1280px;
+  height: 70px;
+  border-radius: 25px;
+  background-color: rgb(255, 61, 61);
+}
+
+.input1inventario {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    border: black 2px solid;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.397);
+}
+
+.boton1inventario {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    width: 150px;
+    height: 55px;
+    border: rgb(255, 61, 61) 5px solid;
+    background-color: rgba(255, 61, 61, 0.345);
+    color: rgb(120, 28, 28);
+    font-size: 20px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.boton1inventario:hover {
+    background-color: rgba(252, 149, 149, 0.726) ;
+    color: rgb(79, 23, 23);
+    border: rgb(242, 41, 41) 5px solid;
+    transform: scale(1.2);
+}
+
+.label1inventario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+}
+
+.selectinventario {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.5s ease;
+
+}
+
+.selectinventario:hover {
+    background-color: rgb(222, 221, 221);
+}
+
+.tabla1inventario {
+    width: 300px;        
+    height: 50px;        
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    overflow-y: auto;   
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.625);
+}
+
+
+  
+  th, td {
+    padding: 16px 20px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: rgb(255, 61, 61);
+    color: white;
+    font-size: 18px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  td {
+    font-size: 16 px;
+    color: #333;
+  }
+
+
+
+.boton2inventario {
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  width: 150px;
+  height: 55px;
+  border: rgb(255, 61, 61) 5px solid;
+  background-color: rgba(255, 61, 61, 0.345);
+  color: rgb(120, 28, 28);
+  font-size: 20px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.boton2inventario:hover {
+  background-color: rgba(252, 149, 149, 0.726);
+  color: rgb(79, 23, 23);
+  border: rgb(242, 41, 41) 5px solid;
+  transform: scale(1.2);
+}
+
+.boton3inventario {
+  position: absolute;
+  top: 70%;
+  left: 66%;
+  width: 150px;
+  height: 55px;
+  border: rgb(255, 61, 61) 5px solid;
+  background-color: rgba(255, 61, 61, 0.345);
+  color: rgb(120, 28, 28);
+  font-size: 20px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.boton3inventario:hover {
+  background-color: rgba(252, 149, 149, 0.726);
+  color: rgb(79, 23, 23);
+  border: rgb(242, 41, 41) 5px solid;
+  transform: scale(1.2);
+}
+
+.boton4inventario {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 200px;
+  height: 70px;
+  border: rgb(255, 61, 61) 5px solid;
+  background-color: rgba(255, 61, 61, 0.345);
+  color: rgb(120, 28, 28);
+  font-size: 20px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.boton4inventario:hover {
+  background-color: rgba(252, 149, 149, 0.726);
+  color: rgb(79, 23, 23);
+  border: rgb(242, 41, 41) 5px solid;
+  transform: scale(1.2);
+}
+
+.boton-ayuda {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgb(255, 61, 61);   
+  background-color: rgb(255, 252, 252);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.boton-ayuda:hover {
+  background-color: rgba(252, 149, 149, 0.72);
+  transform: scale(1.1);
+}
+
+.tooltip-ayuda {
+  position: absolute;
+  top: 18%;
+  right: 5%;
+  width: 260px;
+  padding: 20px 40px;
+  background: white;
+  border: 2px solid rgb(255, 61, 61);
+  border-radius: 12px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: black;
+  z-index: 100;
+}
